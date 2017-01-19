@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Configuration Management</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono">
+    <link rel="stylesheet" href="src/prettify/prettify.css" id="prettify-link" disabled>
+    <link rel="stylesheet" href="styles/fonts.css"        media="screen">
+    <link rel="stylesheet" href="styles/presentation.css" media="screen">
+    <link rel="stylesheet" href="styles/common.css"       media="screen">
+
+    <!-- todo: check - is media="screen" needed? what is the "default"? -->
+    <link rel="stylesheet" href="styles/default.css"  class="theme" media="screen">
+    <link rel="stylesheet" href="styles/moon.css"     class="theme" media="screen">
+    <link rel="stylesheet" href="styles/sand.css"     class="theme" media="screen">
+    <link rel="stylesheet" href="styles/sea_wave.css" class="theme" media="screen">
+  </head>
+  <body>
+    <div id="flex-container">
+    <nav id="helpers">
+      <button title="Previous slide"         id="nav-prev" class="nav-prev">&#8701;</button>
+      <button title="Jump to a random slide" id="slide-no">5</button>
+      <button title="Next slide"             id="nav-next" class="nav-next">&#8702;</button>
+      <menu>
+        <button type="checkbox" data-command="toc" title="Table of Contents" class="toc">TOC</button>
+        <!-- <button type="checkbox" data-command="resources" title="View Related Resources">&#9734;</button> -->
+        <button type="checkbox" data-command="notes" title="View Slide Notes">&#9999;</button>
+        <button type="checkbox" data-command="source" title="View slide source">&#8635;</button>
+        <button type="checkbox" data-command="help" title="View Help">?</button>
+      </menu>
+    </nav>
+    <div class="slides">
+        <div id="presentation-counter">Loading...</div>
+
+        <div class="slide" id="landing-slide">
+          <section class="middle">
+            <p>This presentation is an HTML5 website</p>
+            <p>Press <span id="left-init-key" class="key">&rarr;</span> key to advance.</p>
+          </section>
+          <aside class="note">
+            <section>
+              Welcome! (This field is for speaker notes and commentary.)
+            </section>
+          </aside>
+        </div>
+
+        <div class="slide" id="controls-slide">
+          <header>Slides controls</header>
+          <section>
+            <ul>
+              <li><span class="key">&larr;</span> and <span class="key">&rarr;</span> to move around.</li>
+              <li><span class="key">Ctrl/Command</span> and <span class="key">+</span> or <span class="key">-</span> to zoom in and out if slides don’t fit.</li>
+              <li><span class="key">S</span> to view page source.</li>
+              <li><span class="key">T</span> to change the theme.</li>
+              <li><span class="key">H</span> to toggle syntax highlight.</li>
+              <li><span class="key">N</span> to toggle speaker notes.</li>
+              <li><span class="key">3</span> to toggle 3D effect.</li>
+              <li><span class="key">0</span> to toggle help.</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="slide" id="title-slide">
+          <section class="middle">
+            <hgroup>
+              <h1>
+                Configuration Management
+              </h1>
+              <h2>
+                
+              </h2>
+            </hgroup>
+          </section>
+        </div>
+
+        <div class="slide" id="table-of-contents">
+          <header><h1>Agenda - Table of Contents</h1></header>
+          <section>
+            <ul id="toc-list">
+            </ul>
+          </section>
+        </div>
+
+
+
+
+
+
+        <div class="slide transitionSlide" id="slide1">  <!-- fix: add +2 or +1 was: (i+2).to_s -->
+          <header><h1 id="introduction">Introduction</h1></header>
+          <section>
+              
+<!-- _S9SLIDE_ -->
+
+
+<p>Configuration management refers to the process by which all artifacts relevant to
+your project, and the relationships between them, are stored, retrieved, uniquely
+identified, and modified.</p>
+
+
+
+          </section>
+        </div>
+
+
+
+
+        <div class="slide transitionSlide" id="slide2">  <!-- fix: add +2 or +1 was: (i+2).to_s -->
+          <header><h1 id="using-version-control">Using version control</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+
+
+<ul>
+  <li>Keep Absolutely Everything in Version Control
+    <ul>
+      <li>Check Everything In</li>
+      <li>Version Control: The Freedom to Delete</li>
+    </ul>
+  </li>
+  <li>Check In Regularly to Trunk</li>
+  <li>Use Meaningful Commit Messages</li>
+</ul>
+
+
+
+          </section>
+        </div>
+
+
+
+
+        <div class="slide transitionSlide" id="slide3">  <!-- fix: add +2 or +1 was: (i+2).to_s -->
+          <header><h1 id="managing-dependencies">Managing Dependencies</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+
+
+<ul>
+  <li>Managing External Libraries</li>
+  <li>Managing Components</li>
+</ul>
+
+
+
+          </section>
+        </div>
+
+
+
+
+        <div class="slide transitionSlide" id="slide4">  <!-- fix: add +2 or +1 was: (i+2).to_s -->
+          <header><h1 id="managing-software-configuration">Managing Software configuration</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+
+
+<ul>
+  <li>Configuration and Flexibility</li>
+  <li>The Danger of Ultimate Configurability</li>
+  <li>Types of Configuration</li>
+  <li>Packaging Configuration Information</li>
+  <li>Managing Application Configuration</li>
+  <li>Don’t Check Passwords into Source Control or Hard-Code Them</li>
+  <li>in Your Application</li>
+  <li>Accessing Configuration
+    <pre><code>getThisProperty()
+getThatProperty()
+</code></pre>
+  </li>
+  <li>Modeling Configuration</li>
+  <li>Testing System Configuration</li>
+  <li>Managing Configuration across Applications</li>
+  <li>Principles of Managing Application Configuration</li>
+</ul>
+
+
+
+          </section>
+        </div>
+
+
+
+
+        <div class="slide transitionSlide" id="slide5">  <!-- fix: add +2 or +1 was: (i+2).to_s -->
+          <header><h1 id="managing-your-environments">Managing Your Environments</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+
+
+<ul>
+  <li>Applying Configuration Management to Infrastructure</li>
+  <li>Tools to Manage Environments
+    <ul>
+      <li>Puppet and CfEngine are two examples of tools that make it possible to manage
+  operating system configuration in an automated fashion.</li>
+    </ul>
+  </li>
+  <li>Managing the Change Process</li>
+</ul>
+
+
+
+          </section>
+        </div>
+
+
+
+
+        <div class="slide transitionSlide" id="slide6">  <!-- fix: add +2 or +1 was: (i+2).to_s -->
+          <header><h1 id="summary">Summary</h1></header>
+          <section>
+              <!-- _S9SLIDE_ -->
+
+
+<p>If your configuration management process is sound, you should be able to
+answer “yes” to the following questions:</p>
+<ul>
+  <li>Could you completely re-create your production system, excluding produc-
+tion data, from scratch from the version-controlled assets that you store?</li>
+  <li>Could you regress to an earlier, known good state of your application?</li>
+  <li>Can you be sure that each deployed environment in production, in staging,
+and in test is set up in precisely the same way?
+If not, then your organization is at risk.</li>
+</ul>
+
+          </section>
+        </div>
+
+
+
+        <div id="speaker-note" class="invisible" style="display: none;"></div>
+
+        <aside id="help" class="sidebar invisible" style="display: none;">
+          <table>
+            <caption>Help</caption>
+            <tbody>
+              <tr>
+                <th>Move Around</th>
+                <td>&larr;&nbsp;&rarr;</td>
+              </tr>
+              <tr>
+                <th>Source File</th>
+                <td>s</td>
+              </tr>
+              <tr>
+                <th>Change Theme</th>
+                <td>t</td>
+              </tr>
+              <tr>
+                <th>Syntax Highlight</th>
+                <td>h</td>
+              </tr>
+              <tr>
+                <th>Speaker Notes</th>
+                <td>n</td>
+              </tr>
+              <tr>
+                <th>Toggle 3D</th>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th>Help</th>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </aside>
+
+    </div> <!-- slides -->
+    </div>
+
+
+    <script src="src/prettify/prettify.js" onload="prettyPrint();" defer></script>
+
+    <script src="js/utils.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/start.js"></script>
+  </body>
+</html>

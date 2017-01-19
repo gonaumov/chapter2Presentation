@@ -1,0 +1,7 @@
+headers:
+  generator: "<%= Slideshow.generator %>"
+  author: Georgi Naumov
+  email: gonaumov@gmail.com
+  title: Configuration Management
+  subtitle: "" 
+  date: "<%= Date.today %>"
